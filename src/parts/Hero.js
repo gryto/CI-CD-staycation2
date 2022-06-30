@@ -26,7 +26,7 @@ export default function Hero(props) {
                     </h1>
                     <p className="mb-4 font-weight-light text-teal w-75" style={{lineHeight:"170%"}}>
                     Kami menyediakan apa yang Anda butuhkan untuk menikmati liburan Anda bersama keluarga, Saatnya
-                         membuat momen tak terlupakan lainnya.
+                         membuat momen yanga tak terlupakan.
                     </p>
                     <Button className="btn px-4 text-white" hasShadow isSecondary onClick={showMostPicked}>
                         Telusuri
