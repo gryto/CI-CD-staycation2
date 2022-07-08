@@ -22,7 +22,7 @@ export default function Hero(props) {
                 <div className="col-auto pr-5" style={{width: 530}}>
                     <h1 className="font-weight-bold text-teal line-height-1 mb-3">
                        Santai <span className="text-orange">sejenak,</span> <br/>
-                        Mulai dengan liburan bersama keluarga
+                        Mulai liburan bersama keluarga
                     </h1>
                     <p className="mb-4 font-weight-light text-teal w-75" style={{lineHeight:"170%"}}>
                     Kami menyediakan apa yang Anda butuhkan untuk menikmati liburan Anda bersama keluarga, Saatnya
