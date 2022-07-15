@@ -8,6 +8,7 @@ import Category from "parts/Category";
 import Testimony from "parts/Testimony";
 import Footer from "parts/Footer";
 
+
 import { fetchPage } from "store/actions/page";
 class LandingPage extends Component {
     constructor(props) {
@@ -31,6 +32,18 @@ class LandingPage extends Component {
         <>
             <Header {...this.props}></Header>
             <Hero refMostPicked={this.refMostPicked} data={page.landingPage.hero} />
+
+
+            <section className="container">
+                <div className="row">
+                    <div className="col-7 pr-5">
+
+                    </div>
+                    <div className="col-5">
+                    </div>
+                </div>
+            </section>
+        
             <MostPicked
                 refMostPicked={this.refMostPicked}
                 data={page.landingPage.mostPicked}

@@ -4,7 +4,7 @@ import { withRouter } from "react-router-dom";
 import propTypes from "prop-types";
 
 import Button from "elements/Button";
-import { InputNumber, InputDate } from "elements/Form";
+import { InputNumber, InputDate, InputText } from "elements/Form";
 //import DetailsPage from "pages/DetailsPage";
 
 class BookingForm extends Component {
@@ -83,6 +83,8 @@ class BookingForm extends Component {
     const { itemDetails } = this.props;
 
     return (
+
+      
       <div className="card bordered" style={{ padding: "60px 60px" }}>
         <h4 className="mb-3" style={{marginLeft: "80px"}}>Mulai Booking</h4>
         <h5 className="h2 text-teal mb-4">
@@ -91,7 +93,18 @@ class BookingForm extends Component {
             per {itemDetails.unit}
           </span>
         </h5>
+        
+        
 
+        <label htmlFor="duration">Lokasi</label>
+        <InputText
+          max={30}
+          suffix={" night"}
+          isSuffixPlural
+          onChange={this.updateData}
+          name="duration"
+          value={data.duration}
+        />
         <label htmlFor="duration">Berapa lama kamu akan menginap?</label>
         <InputNumber
           max={30}
